@@ -64,3 +64,17 @@ li a:hover {
 {
 	background-color:#480000;
 }
+@media only screen and {min-width:150px}and {max-width:600px}
+{
+	.container
+{
+	width:100%;
+	border:1px solid grey;
+}
+	
+.pDes
+{
+	position:absolute;
+	left:530px;
+	top:220px;
+}
