@@ -65,21 +65,6 @@ li a:hover {
 	background-color:#480000;
 }
 
-	 	.mob2{
- position:absolute; top:499px; left:615px; margin:30px; background-color:#ff944d; border-width:thick; border-style:solid; border-color:white;   height:250px; width:50%;
-	}
-@media only screen and {min-width:150px}and {max-width:600px}
-{
-	.container
-{
-	width:100%;
-	border:1px solid grey;
-}
-	
-	 	.mob2{
- position:absolute; top:499px; left:615px; margin:30px; background-color:#ff944d; border-width:thick; border-style:solid; border-color:white;   height:250px; width:50%;
-	}
-}
 .pDes
 {
 	position:absolute;
