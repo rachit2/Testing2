@@ -1,23 +1,27 @@
-<html>
-  <body>
-    <form action="test.txt">
-       <input type="text" name="input1" id="input1">
-      
-       <input type="text" name="input2" id="input2">
-      
-       <input type="text" name="input2" id="input2">
-      <input type="submit" value="submit">
-    </form>
-<script type ="text/javascript">
- function WriteToFile(passForm) {
-
-    set fso = CreateObject("Scripting.FileSystemObject");  
-    set s = fso.CreateTextFile("test.txt", True);
-    s.writeline(document.passForm.input1.value);
-    s.writeline(document.passForm.input2.value);
-    s.writeline(document.passForm.input3.value);
-    s.Close();
- }
-  </script>
-  </body>
+<html> 
+<head> 
+<title>Process the HTML form data with the POST method</title> 
+</head> 
+<body> 
+<form method="POST" action="process.asp" name="form1"> 
+<table width="70%" border="0" cellspacing="0" cellpadding="0"> 
+<tr> 
+  <td>name:</td> 
+  <td colspan="2"><input type="text" name="name"></td> 
+</tr> 
+<tr> 
+  <td>email:</td> 
+  <td colspan="2"><input type="text" name="email"></td> 
+</tr> 
+<tr> 
+  <td>comments:</td> 
+  <td colspan="2"><textarea name="comment" cols="40" rows="5"></textarea></td> 
+</tr> 
+<tr> 
+  <td>&nbsp;</td> 
+  <td colspan="2"><input type="submit" name="Submit" value="Submit"></td> 
+</tr> 
+</table> 
+</form> 
+</body> 
 </html>
