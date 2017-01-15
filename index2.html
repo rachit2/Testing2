@@ -1,1 +1,22 @@
+<html>
+  <body>
+    <form>
+       <input type="text" name="input1" id="input1">
+      
+       <input type="text" name="input2" id="input2">
+      
+       <input type="text" name="input2" id="input2">
+    </form>
+<script type ="text/javascript">
+ function WriteToFile(passForm) {
 
+    set fso = CreateObject("Scripting.FileSystemObject");  
+    set s = fso.CreateTextFile("test.txt", True);
+    s.writeline(document.passForm.input1.value);
+    s.writeline(document.passForm.input2.value);
+    s.writeline(document.passForm.input3.value);
+    s.Close();
+ }
+  </script>
+  </body>
+</html>
